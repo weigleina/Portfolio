@@ -22,13 +22,21 @@
     <header>
 
       <!-- header -->
-      <div class="header-content" id="header">
+      <div class="main-content" id="header">
         <h1>Alyssa Weiglein</h1>
         <h3>Software Engineer</h3>
       </div>
 
+      <!-- social icons -->
+      <div class="main-content" style="margin-bottom: -10px;">
+        <a href="mailto: allie@alliew.dev" target="_blank"><i class="fa-solid fa-at"></i></a>
+        <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
+        <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+        <a href="http://github.com/aweiglein" target="_blank"><i class="fa-brands fa-twitter social"></i></a>
+      </div>
+
       <!-- about -->
-      <div class="header-content">
+      <div class="main-content">
         <h3>About</h3>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, pariatur at 
         impedit perspiciatis, facere doloribus delectus nihil tenetur atque nulla 
@@ -36,7 +44,7 @@
       </div>
 
       <!-- my work -->
-      <div class="header-content">
+      <div class="main-content">
         <h3>My Work</h3>
         <!-- responsive container -->
         <div id="project-type-button-container">
@@ -46,7 +54,7 @@
           <button class="project-type design" onclick="filterSelection('design')"><span><i class="fa-solid fa-crop"></i></span></button>
           <button class="project-type art" onclick="filterSelection('art')"><span><i class="fa-solid fa-palette"></i></span></button>
         </div>
-        <!-- responsive container -->
+        <!-- projects container -->
         <div class="flex-container">
           
           <!-- code project | datesaver -->
@@ -167,36 +175,15 @@
             </div>
           </div>
 
-          <!-- design project -->
+          <!-- design project | 2022 event poster -->
           <div class="project-card design">
             <div class="project-card-contents">
-              <h3><i class="fa-solid fa-crop"></i> Brand Branding
-                <span class="right">
-                  <button class="demo modal-button" href="#myModal2">View</button>
-                </span>
-              </h3>
-              <div class="skill-stack-container">
-                  <span class="skill-stack">Photoshop</span>
-                  <span class="skill-stack">Illustrator</span>
-              </div>
+              <h3><i class="fa-solid fa-crop"></i> 2022 Event Poster</h3>
+                <img style="width:100%;" src="https://venngage-wordpress.s3.amazonaws.com/uploads/2018/10/Creative-Pool-Party-Event-Poster-Template.jpg">
               
-              <p>Business identity and design components for 'Brand'.</p>
-              <!-- The Modal -->
-              <div id="myModal2" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">×</span>
-                  <img style="width:100%;" src="https://venngage-wordpress.s3.amazonaws.com/uploads/2018/10/Creative-Pool-Party-Event-Poster-Template.jpg">
-                  <p span="text-align:center;">Event Poster, Alyssa Weiglein, 2021</p>
-                </div>
-              </div>
-
-              <div class="stats-container">
-                  <span class="stats">10k upvotes</span>
-                  <span class="stats">15k Views on LinkedIn</span>
-                  <span class="stats">Javaxxxxx</span>
-                  <span class="stats">JavaFX yellow</span>
-                  <span class="stats">Spring</span>
+                <div class="skill-stack-container">
+                  <span class="script">Created with: </span>
+                  <span class="skill-stack">Illustrator</span>
               </div>
             </div>
           </div>
@@ -224,31 +211,6 @@
             </div>
           </div>
 
-          <!-- design project -->
-          <div class="project-card design">
-            <div class="project-card-contents">
-              <h3><i class="fa-solid fa-crop"></i> Brand Branding
-                <span class="right">
-                  <button class="demo">View</button>
-                </span>
-              </h3>
-              <div class="skill-stack-container">
-                  <span class="skill-stack">Photoshop</span>
-                  <span class="skill-stack">Illustrator</span>
-              </div>
-              
-              <p>Business identity and design components for 'Brand'.</p>
-
-              <div class="stats-container">
-                  <span class="stats">10k upvotes</span>
-                  <span class="stats">15k Views on LinkedIn</span>
-                  <span class="stats">Javaxxxxx</span>
-                  <span class="stats">JavaFX yellow</span>
-                  <span class="stats">Spring</span>
-              </div>
-            </div>
-          </div>
-
           <!-- art project | self portrait -->
           <div class="project-card art">
             <div class="project-card-contents">
@@ -256,16 +218,17 @@
                 <img style="width:100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/632px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg">
               
                 <div class="skill-stack-container">
+                  <span class="script">Created with: </span>
                   <span class="skill-stack">Oil</span>
                   <span class="skill-stack">Pencil</span>
               </div>
             </div>
           </div>
 
-          <!-- code project | collaborative to-do list -->
+          <!-- code project | to-do list -->
           <div class="project-card code">
             <div class="project-card-contents">
-              <h3><i class="fas fa-code"></i> Collaborative To-Do List
+              <h3><i class="fas fa-code"></i> To-Do List
                 <span class="right">
                   <a href="http://github.com/weigleina/DateSaver" target="_blank">
                     <button class="github">Github</button></a>&nbsp;
@@ -287,28 +250,16 @@
             </div>
           </div>   
 
-          <!-- design project -->
+          <!-- design project | 2021 event poster -->
           <div class="project-card design">
             <div class="project-card-contents">
-              <h3><i class="fa-solid fa-crop"></i> Event Poster
-                <span class="right">
-                  <button class="demo">View</button>
-                </span>
-              </h3>
-              <div class="skill-stack-container">
+              <h3><i class="fa-solid fa-crop"></i> 2021 Event Poster</h3>
+                <img style="width:100%;" src="https://venngage-wordpress.s3.amazonaws.com/uploads/2018/10/Creative-Pool-Party-Event-Poster-Template.jpg">
+              
+                <div class="skill-stack-container">
+                  <span class="script">Created with: </span>
                   <span class="skill-stack">Photoshop</span>
                   <span class="skill-stack">Illustrator</span>
-              </div>
-              
-              <p>A poster for the 2021 'Some Event' in Eugene, OR.
-              </p>
-
-              <div class="stats-container">
-                  <span class="stats">10k upvotes</span>
-                  <span class="stats">15k Views on LinkedIn</span>
-                  <span class="stats">Javaxxxxx</span>
-                  <span class="stats">JavaFX yellow</span>
-                  <span class="stats">Spring</span>
               </div>
             </div>
           </div>
@@ -320,6 +271,7 @@
                 <img style="width:100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/632px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg">
               
                 <div class="skill-stack-container">
+                  <span class="script">Created with: </span>
                   <span class="skill-stack">Pencil</span>
               </div>
             </div>
@@ -329,15 +281,30 @@
       </div>
 
       <!-- education -->
-      <div class="header-content">
+      <div class="main-content">
         <h3>Education</h3>
         <b>BS, Computer Science</b><span class="right">Expected 2022</span><br>
         Western Governors University
       </div>
 
+      <!-- career development -->
+      <div class="main-content">
+        <h3>Career Development</h3>
+        <b>Project+ Cerification</b><span class="right">2022</span><br>
+        CompTIA<br><br>
+        <b>ITIL 4 Foundations Cerification</b><span class="right">2022</span><br>
+        Axelos
+        <!-- 
+        <b>MOOC Java Programming I & II</b><span class="right">2022</span><br>
+        University of Helsinki<br><br>
+        <b>UI/UX Developer</b><span class="right">2022</span><br>
+        Google
+        -->
+      </div>
+
       <!-- experience -->
 <!--    
-      <div class="header-content">
+      <div class="main-content">
         <h3>Experience</h3>
         <b>Title</b><span class="right">2020 — 2022</span><br>
         Company
@@ -345,14 +312,14 @@
 -->  
 
       <!-- open dashboard -->
-      <div class="header-content">
+      <div class="main-content">
         <h3>Open Dashboard</h3>
         <h4 id="this-week"><span>This week, Alyssa:</span></h4>
-        <div style="max-width: 1080px; text-align: center;">
-          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Walked<br>Steps</div>
-          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Ate<br>Calories</div>
-          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Hiked<br>Trails</div>
-          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Slept<br>Hours</div>      
+        <div id="dash-cards-container">
+          <div class="dash-cards"><b>Walked</b><br>######<br>Steps</div>
+          <div class="dash-cards"><b>Ate</b><br>######<br>Calories</div>
+          <div class="dash-cards"><b>Hiked</b><br>######<br>Trails</div>
+          <div class="dash-cards"><b>Slept</b><br>######<br>Hours</div>      
         </div>
       </div>
     </header>
@@ -363,7 +330,7 @@
         <a href="http://github.com/aweiglein" target="_blank"><i class="fa-brands fa-github social"></i></a>
         <a href="http://github.com/aweiglein" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
         <a href="http://github.com/aweiglein" target="_blank"><i class="fa-brands fa-twitter social"></i></a><br>
-        Alyssa Weiglein © 2022
+        Alyssa Weiglein, CS Engineer © 2022
       </div>
     </footer>
     
@@ -418,6 +385,5 @@
       }
 
     </script>
-
   </body>
 </html>

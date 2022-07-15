@@ -20,10 +20,28 @@ header {
   margin-top: 120px;
 }
 
-.header-content {
+.main-content {
   max-width: 640px;
   margin: auto;
   padding: 34px;
+}
+
+.main-content a {
+  padding-right: 16px;
+  font-size: 22px;
+  color:#3a3a3a;
+}
+
+.footer-content a {
+  font-size: 22px;
+  color:#3a3a3a;
+  padding: 8px;
+}
+
+.main-content i:hover, .footer-content i:hover {
+  color: rgb(165, 192, 133);
+  transform: translateY(2px);
+  transition: 0.2s;
 }
 
 /* footer */
@@ -39,15 +57,6 @@ footer {
   text-align: center;
 }
 
-footer i {
-  font-size: 30px;
-  padding: 10px;
-  color: rgb(83, 83, 83);
-}
-footer i:hover {
-  color: rgb(142, 170, 153);
-  transition: 0.2s;
-}
 
 /* global */
 .right {
@@ -74,7 +83,7 @@ button {
 }
 ::-webkit-scrollbar-track {
   background-color: rgb(211, 211, 211);
-  border-left: 1px solid #c0c0c0;
+
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(235, 236, 236);
@@ -210,19 +219,23 @@ button.demo:hover {
   display: none; /* cards hidden on default*/
 }
 
+.project-card:last-child {
+  margin-bottom: -26px !important;
+}
+
 .project-card img:not(#chatbot) {
   border-radius: 10px;
-  box-shadow: 1px 1px 19px -12px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 1px 1px 19px -12px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 19px -12px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
+  -webkit-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
+  -moz-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
   width:100%;
 }
 
 #chatbot-container {
   height: 500px; text-align: center; background-color:rgb(247, 247, 247); border-radius: 10px;
-  box-shadow: 1px 1px 19px -12px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 1px 1px 19px -12px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 19px -12px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
+  -webkit-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
+  -moz-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
 }
 
 .project-card-contents {
@@ -235,8 +248,33 @@ button.demo:hover {
   display: block; /* cards display on filter */
 }
 
+/* open dashboard*/
+* {
+  box-sizing: border-box;
+}
+#dash-cards-container {
+  max-width: 1080px; 
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1%;
+  row-gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-cards {
+  background-color:white;
+  display:inline-block;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 24%;
+}
+
 /* responsive sizing */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .project-card {
     width: 100%;
   }
@@ -248,5 +286,8 @@ button.demo:hover {
     width: 26%;
     margin: 4px ;
     float: left;
+  }
+  .dash-cards {
+    width: 49%;
   }
 }
