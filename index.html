@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/d4df3ad427.js" crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script src="./script/script.js" type="text/javascript"></script>
+    <!-- css -->
+    <link href="./styles/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+    <title>template.html</title>
+  </head>
+
+  <body>
+    <header>
+
+      <!-- header -->
+      <div class="header-content" id="header">
+        <h1>Alyssa Weiglein</h1>
+        <h3>Software Engineer</h3>
+      </div>
+
+      <!-- about -->
+      <div class="header-content">
+        <h3>About</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, pariatur at 
+        impedit perspiciatis, facere doloribus delectus nihil tenetur atque nulla 
+        libero vel deleniti minima recusandae esse voluptates illo placeat laudantium.
+      </div>
+
+      <!-- my work -->
+      <div class="header-content">
+        <h3>My Work</h3>
+        <!-- responsive container -->
+        <div id="project-type-button-container">
+          <!-- buttons to filter by project type -->
+          <button class="project-type active" onclick="filterSelection('all')">All</button>
+          <button class="project-type code" onclick="filterSelection('code')"><span><i class="fas fa-code"></i></span></button>
+          <button class="project-type design" onclick="filterSelection('design')"><span><i class="fa-solid fa-crop"></i></span></button>
+          <button class="project-type art" onclick="filterSelection('art')"><span><i class="fa-solid fa-palette"></i></span></button>
+        </div>
+        <!-- responsive container -->
+        <div class="flex-container">
+          
+          <!-- code project | datesaver -->
+          <div class="project-card code">
+            <div class="project-card-contents">
+              <h3><i class="fas fa-code"></i> DateSaver
+                <span class="right">
+                  <a href="http://github.com/weigleina/DateSaver" target="_blank">
+                    <button class="github">Github</button></a>&nbsp;
+                  <a href="http://sudoku-py.herokuapp.com" target="_blank">
+                    <button class="demo">Demo</button></a>
+                </span>
+              </h3>
+              <p>A fully-functioning desktop program used to manipulate a relational 
+                database of appointment and customer data.</p>
+              <img src="./images/datesaver.gif"/>
+                <div class="skill-stack-container">
+                  <span class="script">Built with: </span>
+                  <span class="skill-stack">Java</span>
+                  <span class="skill-stack">MySQL</span>
+                  <span class="skill-stack">JavaFX</span>
+                  <span class="skill-stack">APIs</span>
+              </div>
+            </div>
+          </div>      
+
+          <!-- code project | flood-recovery bot -->
+          <div class="project-card code">
+            <div class="project-card-contents">
+              <h3><i class="fas fa-code"></i> Flood-Recovery Bot
+                <span class="right">
+                  <a href="http://github.com/weigleina/QuickRoute" target="_blank">
+                    <button class="github">Github</button></a>&nbsp;
+                  <a href="http://sudoku-py.herokuapp.com" target="_blank">
+                    <button class="demo">Demo</button></a>
+                </span>
+              </h3>
+              <p>A virtual prototype of an autonomous robotic recovery system that demonstrates goal-seeking behaviors in navigating through a predefined area.</p>
+              <img src="./images/flood-recovery-bot.gif"/>
+                <div class="skill-stack-container">
+                  <span class="script">Built with: </span>
+                  <span class="skill-stack">Lua</span>
+                  <span class="skill-stack">CoppeliaSim</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- code project | quickroute -->
+          <div class="project-card code">
+            <div class="project-card-contents">
+              <h3><i class="fas fa-code"></i> QuickRoute
+                <span class="right">
+                  <a href="http://github.com/weigleina/QuickRoute" target="_blank">
+                    <button class="github">Github</button></a>&nbsp;
+                  <a href="http://sudoku-py.herokuapp.com" target="_blank">
+                    <button class="demo">Demo</button></a>
+                </span>
+              </h3>
+              <p>A command-line interface application that utilizes a greedy algorithm to find the most efficient route for a delivery queue.</p>
+              <img src="./images/quickroute.gif"/>
+                <div class="skill-stack-container">
+                  <span class="script">Built with: </span>
+                  <span class="skill-stack">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- code project | sudoku-py -->
+          <div class="project-card code">
+            <div class="project-card-contents">
+              <h3><i class="fas fa-code"></i> Sudoku-Py
+                <span class="right">
+                  <a href="http://github.com/weigleina/SudokuPy" target="_blank">
+                    <button class="github">Github</button></a>&nbsp;
+                  <a href="http://sudoku-py.herokuapp.com" target="_blank">
+                    <button class="demo">Demo</button></a>
+                </span>
+              </h3>
+              <p>A responsive web application that utilizes a recursive backtracking 
+                algorithm to find the optimal solution for any unsolved sudoku puzzle.</p>
+              <img src="./images/datesaver.gif"/>
+                <div class="skill-stack-container">
+                  <span class="script">Built with: </span>
+                  <span class="skill-stack">Python</span>
+                  <span class="skill-stack">Flask</span>
+                  <span class="skill-stack">NumPy</span>
+                  <span class="skill-stack">JavaScript</span>
+                  <span class="skill-stack">HTML</span>
+                  <span class="skill-stack">HTML</span>
+                  <span class="skill-stack">HTML</span>
+                  <span class="skill-stack">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- code project | algorithm visualizer -->
+          <div class="project-card code">
+            <div class="project-card-contents">
+              <h3><i class="fas fa-code"></i> Algorithm Visualizer
+                <span class="right">
+                  <a href="http://github.com/weigleina/SudokuPy" target="_blank">
+                    <button class="github">Github</button></a>&nbsp;
+                  <a href="http://sudoku-py.herokuapp.com" target="_blank">
+                    <button class="demo">Demo</button></a>
+                </span>
+              </h3>
+              <p>An animated graphic representation of various sorting algorims 
+                displayed through a responsive web interface.</p>
+              <img src="./images/datesaver.gif"/>
+                <div class="skill-stack-container">
+                  <span class="script">Built with: </span>
+                  <span class="skill-stack">Python</span>
+                  <span class="skill-stack">Flask</span>
+                  <span class="skill-stack">NumPy</span>
+                  <span class="skill-stack">JavaScript</span>
+                  <span class="skill-stack">HTML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- design project -->
+          <div class="project-card design">
+            <div class="project-card-contents">
+              <h3><i class="fa-solid fa-crop"></i> Brand Branding
+                <span class="right">
+                  <button class="demo modal-button" href="#myModal2">View</button>
+                </span>
+              </h3>
+              <div class="skill-stack-container">
+                  <span class="skill-stack">Photoshop</span>
+                  <span class="skill-stack">Illustrator</span>
+              </div>
+              
+              <p>Business identity and design components for 'Brand'.</p>
+              <!-- The Modal -->
+              <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">×</span>
+                  <img style="width:100%;" src="https://venngage-wordpress.s3.amazonaws.com/uploads/2018/10/Creative-Pool-Party-Event-Poster-Template.jpg">
+                  <p span="text-align:center;">Event Poster, Alyssa Weiglein, 2021</p>
+                </div>
+              </div>
+
+              <div class="stats-container">
+                  <span class="stats">10k upvotes</span>
+                  <span class="stats">15k Views on LinkedIn</span>
+                  <span class="stats">Javaxxxxx</span>
+                  <span class="stats">JavaFX yellow</span>
+                  <span class="stats">Spring</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- code project | chat bot -->
+          <div class="project-card code">
+            <div class="project-card-contents">
+              <h3><i class="fas fa-code"></i> Chat Bot
+                <span class="right">
+                  <a href="http://github.com/weigleina/SudokuPy" target="_blank">
+                    <button class="github">Github</button></a>&nbsp;
+                  <a href="http://sudoku-py.herokuapp.com" target="_blank">
+                    <button class="demo">Demo</button></a>
+                </span>
+              </h3>
+              <p>A human-response simulated chat bot that follows a decision-making algorithm 
+                to recommend the best career choice to website visitors.</p>
+                <div id="chatbot-container">
+                  <img src="./images/chatbot.gif" id="chatbot" style="height: 100%;"/>
+                </div>
+                <div class="skill-stack-container">
+                  <span class="script">Built with: </span>
+                  <span class="skill-stack">AI/ML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- design project -->
+          <div class="project-card design">
+            <div class="project-card-contents">
+              <h3><i class="fa-solid fa-crop"></i> Brand Branding
+                <span class="right">
+                  <button class="demo">View</button>
+                </span>
+              </h3>
+              <div class="skill-stack-container">
+                  <span class="skill-stack">Photoshop</span>
+                  <span class="skill-stack">Illustrator</span>
+              </div>
+              
+              <p>Business identity and design components for 'Brand'.</p>
+
+              <div class="stats-container">
+                  <span class="stats">10k upvotes</span>
+                  <span class="stats">15k Views on LinkedIn</span>
+                  <span class="stats">Javaxxxxx</span>
+                  <span class="stats">JavaFX yellow</span>
+                  <span class="stats">Spring</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- art project | self portrait -->
+          <div class="project-card art">
+            <div class="project-card-contents">
+              <h3><i class="fa-solid fa-palette"></i> Self Portrait</h3>
+                <img style="width:100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/632px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg">
+              
+                <div class="skill-stack-container">
+                  <span class="skill-stack">Oil</span>
+                  <span class="skill-stack">Pencil</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- code project | collaborative to-do list -->
+          <div class="project-card code">
+            <div class="project-card-contents">
+              <h3><i class="fas fa-code"></i> Collaborative To-Do List
+                <span class="right">
+                  <a href="http://github.com/weigleina/DateSaver" target="_blank">
+                    <button class="github">Github</button></a>&nbsp;
+                  <a href="http://sudoku-py.herokuapp.com" target="_blank">
+                    <button class="demo">Demo</button></a>
+                </span>
+              </h3>
+              <p>An online 'To-Do List' that supports collaborative editing by multiple users.</p>
+              <img src="./images/datesaver.gif"/>
+                <div class="skill-stack-container">
+                  <span class="script">Built with: </span>
+                  <span class="skill-stack">TypeScript</span>
+                  <span class="skill-stack">React</span>
+                  <span class="skill-stack">MongoDB</span>
+                  <span class="skill-stack">NodeJS</span>
+                  <span class="skill-stack">HTML</span>
+                  <span class="skill-stack">CSS</span>
+              </div>
+            </div>
+          </div>   
+
+          <!-- design project -->
+          <div class="project-card design">
+            <div class="project-card-contents">
+              <h3><i class="fa-solid fa-crop"></i> Event Poster
+                <span class="right">
+                  <button class="demo">View</button>
+                </span>
+              </h3>
+              <div class="skill-stack-container">
+                  <span class="skill-stack">Photoshop</span>
+                  <span class="skill-stack">Illustrator</span>
+              </div>
+              
+              <p>A poster for the 2021 'Some Event' in Eugene, OR.
+              </p>
+
+              <div class="stats-container">
+                  <span class="stats">10k upvotes</span>
+                  <span class="stats">15k Views on LinkedIn</span>
+                  <span class="stats">Javaxxxxx</span>
+                  <span class="stats">JavaFX yellow</span>
+                  <span class="stats">Spring</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- art project | form study -->
+          <div class="project-card art">
+            <div class="project-card-contents">
+              <h3><i class="fa-solid fa-palette"></i> Form Study</h3>
+                <img style="width:100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/632px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg">
+              
+                <div class="skill-stack-container">
+                  <span class="skill-stack">Pencil</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- education -->
+      <div class="header-content">
+        <h3>Education</h3>
+        <b>BS, Computer Science</b><span class="right">Expected 2022</span><br>
+        Western Governors University
+      </div>
+
+      <!-- experience -->
+<!--    
+      <div class="header-content">
+        <h3>Experience</h3>
+        <b>Title</b><span class="right">2020 — 2022</span><br>
+        Company
+      </div>
+-->  
+
+      <!-- open dashboard -->
+      <div class="header-content">
+        <h3>Open Dashboard</h3>
+        <h4 id="this-week"><span>This week, Alyssa:</span></h4>
+        <div style="max-width: 1080px; text-align: center;">
+          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Walked<br>Steps</div>
+          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Ate<br>Calories</div>
+          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Hiked<br>Trails</div>
+          <div style="width: 47%; height: 40px; margin: 4px; display:inline-block; text-align: center; border: 1px solid black; border-radius: 10px;">Slept<br>Hours</div>      
+        </div>
+      </div>
+    </header>
+    
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        <a href="http://github.com/aweiglein" target="_blank"><i class="fa-brands fa-github social"></i></a>
+        <a href="http://github.com/aweiglein" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+        <a href="http://github.com/aweiglein" target="_blank"><i class="fa-brands fa-twitter social"></i></a><br>
+        Alyssa Weiglein © 2022
+      </div>
+    </footer>
+    
+    <script>
+      // filters projects by type
+      filterSelection("all")
+        function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("project-card");
+        if (c == "all") c = "";
+        // add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      // show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // add active class to the current control button to highlight it
+      var btnContainer = document.getElementById("project-type-button-container");
+      var btns = btnContainer.getElementsByClassName("project-type");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+    </script>
+
+  </body>
+</html>
