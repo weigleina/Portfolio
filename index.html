@@ -328,17 +328,17 @@
 
       <!-- contact form -->
       <div class="main-content">
-        <form action="./formreceived.html" name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="./formreceived.html">
           <h3>Get in Touch</h3>
           <div id="contact-form-container">
             <div id="contact-form">
               <div id="contact-form-top">
                 <input type="hidden" name="subject" value="Contacted from portfolio-arw" />
-                <input type="text" id="form-name" placeholder="Name" required/>
-                <input type="email" id="form-email" placeholder="Email" required />
+                <input type="text" name="name" id="form-name" placeholder="Name" required/>
+                <input type="email" name="email" id="form-email" placeholder="Email" required />
               </div>
-              <textarea rows="6" placeholder="Let's work together!"></textarea><br>
-              <input type="submit" id="submit">
+              <textarea rows="6" name="message" id="form-message" placeholder="Let's work together!" required></textarea><br>
+              <input type="submit" id="submit" />
             </div>
           </div>
         </form>
