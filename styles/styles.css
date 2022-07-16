@@ -14,9 +14,19 @@ body {
   margin-top:-140px;
   font-size: 10px;
   font-family:'Courier New', Courier, monospace;
-  color: rgb(207, 207, 207);
   letter-spacing: 2px;
 }
+
+#logo a {
+  text-decoration: none;
+  color: rgb(207, 207, 207);
+}
+
+#logo a:hover {
+  color: rgb(95, 95, 95);
+  transition: 0.2s;
+}
+
 h3:not(.project-card-contents h3, #header h3) {
   font-family: 'Permanent Marker';
   font-weight: normal;
