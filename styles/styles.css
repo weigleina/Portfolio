@@ -21,7 +21,7 @@ header {
 }
 
 .main-content {
-  max-width: 640px;
+  max-width: 800px;
   margin: auto;
   padding: 34px;
 }
@@ -228,17 +228,17 @@ button.demo:hover {
 
 .project-card img:not(#chatbot) {
   border-radius: 10px;
-  box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
-  -webkit-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
-  -moz-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
+  box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
+  -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
   width:100%;
 }
 
 #chatbot-container {
   height: 500px; text-align: center; background-color:rgb(247, 247, 247); border-radius: 10px;
-  box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
-  -webkit-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
-  -moz-box-shadow: 2px 2px 19px -4px rgba(0,0,0,0.43);
+  box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
+  -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
 }
 
 .project-card-contents {
