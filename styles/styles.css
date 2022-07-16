@@ -294,6 +294,6 @@ button.demo:hover {
     width: 49%;
   }
   #chatbot-container {
-    width: 300px;
+    height: 340px;
   }
 }
