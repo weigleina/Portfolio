@@ -293,4 +293,7 @@ button.demo:hover {
   .dash-cards {
     width: 49%;
   }
+  #chatbot {
+    width: 60%;
+  }
 }
