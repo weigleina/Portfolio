@@ -19,7 +19,11 @@
   </head>
 
   <body>
+    
     <header>
+      <div class="main-content" id="logo">
+        <h1>>arw</h1>
+      </div>
 
       <!-- header -->
       <div class="main-content" id="header">
@@ -40,7 +44,9 @@
         <h3>About</h3>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, pariatur at 
         impedit perspiciatis, facere doloribus delectus nihil tenetur atque nulla 
-        libero vel deleniti minima recusandae esse voluptates illo placeat laudantium. Get in touch: <a href="mailto:allie@alliew.dev" style="font-size: 13px;">allie@alliew.dev</a>
+        libero vel deleniti minima recusandae esse voluptates illo placeat laudantium. Get in touch: 
+        <a href="mailto:allie@alliew.dev" style="font-size: 13px;">allie@alliew.dev</a><br><br>
+        <img src="./images/self.png" id="self"/>
       </div>
 
       <!-- my work -->
@@ -133,7 +139,7 @@
                   <a href="http://github.com/weigleina/SudokuPy" target="_blank">
                     <button class="github">Github</button></a>&nbsp;
                   <a href="http://sudoku-py.herokuapp.com" target="_blank">
-                    <button class="demo">Demo</button></a>
+                    <button class="demo">Live</button></a>
                 </span>
               </h3>
               <p>A responsive web application that utilizes a recursive backtracking 
@@ -318,8 +324,26 @@
           <div class="dash-cards"><b>Slept</b><br>######<br>Hours</div>      
         </div>
       </div>
+
+      <!-- contact form -->
+      <div class="main-content">
+        <form action="./formreceived.html" name="contact" method="POST" data-netlify="true">
+          <h3>Get in Touch</h3>
+          <div id="contact-form-container">
+            <div id="contact-form">
+              <div id="contact-form-top">
+                <input type="hidden" name="subject" value="Contacted from portfolio-arw" />
+                <input type="text" id="form-name" placeholder="Name" required/>
+                <input type="email" id="form-email" placeholder="Email" required />
+              </div>
+              <textarea rows="6" placeholder="Let's work together!"></textarea><br>
+              <input type="submit" id="submit">
+            </div>
+          </div>
+        </form>
+      </div>
     </header>
-    
+
     <!-- footer -->
     <footer>
       <div class="footer-content">
