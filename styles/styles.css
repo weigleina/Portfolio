@@ -15,6 +15,7 @@ h3:not(.project-card-contents h3, #header h3) {
   font-weight: normal;
   font-size: 24px;
 }
+
 /* header */
 header {
   margin-top: 120px;
@@ -26,7 +27,7 @@ header {
   padding: 34px;
 }
 
-.main-content a {
+.main-content a:not(.project-card a) {
   padding-right: 16px;
   font-size: 22px;
   color:#3a3a3a;
@@ -64,7 +65,7 @@ footer {
 }
 
 .script {
-  font-family: 'Permanent Marker';
+  font-family: 'Permanent Marker', sans-serif;
   font-size: 18px;
 }
 
@@ -74,7 +75,7 @@ button {
   border: none;
   font-weight: bold;
   text-align: center;
-  font-family: 'Century Gothic';
+  font-family: 'Century Gothic', sans-serif;
 }
 
 /* scrollbar */
@@ -107,6 +108,7 @@ button.project-type {
   outline: none;
   cursor: pointer;
   border: 0;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .project-type:hover span {
@@ -146,6 +148,7 @@ button.github {
   height: 24px;
   padding: 0;
   border-radius: 6px;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 button.github:hover {
@@ -161,6 +164,7 @@ button.demo {
   height: 24px;
   padding: 0;
   border-radius: 6px;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 button.demo:hover {
