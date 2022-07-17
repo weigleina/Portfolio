@@ -37,9 +37,6 @@ header {
   margin-top: 120px;
 }
 
-#header {
-}
-
 #self {
   border-radius: 8px; 
   margin-bottom: 20px;
@@ -55,7 +52,38 @@ header {
   padding: 34px;
 }
 
-.main-content a:not(.project-card a) {
+.main-content a {
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+.main-content a:hover {
+  color: rgb(153, 153, 153);
+  transition: 0.2s;
+}
+
+.hover_img a { position:relative; float:left }
+.hover_img a span { position:absolute; display:none; }
+.hover_img a:hover span { display:inline-block; margin-left: 37px; bottom: -40px; }
+
+.fade-in {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+.main-content i:not(.project-card a) {
   padding-right: 16px;
   font-size: 22px;
   color:#3a3a3a;
@@ -316,7 +344,7 @@ button.demo:hover {
 
 /* get in touch - contact form*/
 #contact-form-container {
-  background-color:rgb(34, 34, 34); 
+  background-image:url('https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
   border-radius: 10px; 
   padding: 20px;
   text-align: center;
@@ -394,8 +422,5 @@ textarea {
   }
   #chatbot-container {
     height: 340px;
-  }
-  #contact-form {
-    min-width: 100%;
   }
 }
