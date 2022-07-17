@@ -37,27 +37,38 @@
         <a href="mailto: allie@alliew.dev" target="_blank"><i class="fa-solid fa-at"></i></a>
         <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
         <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a><br><br><br><br>
-        <span class="fade-in">I develop innovative computer applications that solve real-world problems.</span>
+        <span class="fade-in">I develop innovative computer applications that solve real-world problems.</span>      
       </div>
 
       <!-- about -->
       <div class="main-content">
         <h3>About</h3>
-       
+
+
+
+        Why I love computers/cs/studying/math/engineering/life-long learner, quick-moving industry/
+        problem-solving/detail-oriented/Background in design, end-to-end software.
+        <br><br>
         In my free time I can be found spending time with my family, camping, or whipping up 
-        some new bandanas for
-        <div class="hover_img">
-          <a href="#">my dog<span>
-            <img src="./images/dog.jpeg" alt="image" height="240" style="border-radius: 8px; box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
+        some new bandanas for 
+        <button id="img-popup-button" class="contact-links" style="padding: 0; background-color: transparent">my dog</button>. 
+
+        <div id="img-popup" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="./images/dog.jpeg" style="width: 100%; 
+            border-radius: 10px; 
+            box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
             -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);
-            -moz-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);" /></span>
-          </a>
+            -moz-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.38);">
+          </div>
         </div>
-        . I'm always happy to meet new people, whether new clients or just to grab coffee and 
-        chat about PC parts. Send me an 
-        <a href="mailto:allie@alliew.dev" target="_blank">email</a>, a 
-        <a href="#contact-form-container">quick note</a>, or connect on 
-        <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank">linkedin</a>.
+
+        I'm always happy to meet new people, 
+        whether new clients or just to grab coffee and chat about PC parts. Send me an 
+        <a href="mailto:allie@alliew.dev" class="contact-links">email</a>, a 
+        <a href="#contact-form-container" class="contact-links">quick note</a>, or connect with me on 
+        <a href="https://www.linkedin.com/in/alliew-dev/" class="contact-links" target="_blank">linkedin</a>.
         <br><br>
         <img src="./images/self.png" id="self"/>
       </div>
@@ -244,7 +255,7 @@
                 <div class="skill-stack-container">
                   <span class="script">Created with: </span>
                   <span class="skill-stack">Corel Painter</span>
-                  <span class="skill-stack">Digital</span>
+                  <span class="skill-stack">Digital Paint</span>
               </div>
             </div>
           </div>
@@ -368,6 +379,32 @@
     </footer>
     
     <script>
+      // get the modal
+      var modal = document.getElementById("img-popup");
+
+      // get the button that opens the modal
+      var btn = document.getElementById("img-popup-button");
+
+      // get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // opens img-popup
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // closes img-popup
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // closes img-popup when clicked out of focus
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
       // filters projects by type
       filterSelection("all")
         function filterSelection(c) {
