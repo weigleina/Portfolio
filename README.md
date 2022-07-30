@@ -1,3 +1,3 @@
 # portfolio
  
-[portfolio-arw](http://portfoilio-arw.netlify.app)
+[portfolio-arw](http://portfolio-arw.netlify.app)
