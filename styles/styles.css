@@ -1,125 +1,149 @@
-html {
-  scroll-behavior: smooth;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* ---------------------- google fonts ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@800&display=swap');
 
-body {
-  background-color: rgb(229, 235, 233);
-  margin: 0;
+/* ------------------------- global ------------------------- */
+* {
   padding: 0;
-  font-size: 1em;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  text-align: center;
-  margin: auto;
-  overflow: hidden;
-  height: 50px;
-  padding-bottom: 30px;
-  background-color: rgb(43, 48, 49);
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-nav a {
-  font-size: .9em;
-  color: white;
+a {
+  color: gold;
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  text-underline-offset: 8px;
+p{
+  margin-bottom:1em;
 }
 
-.nav-links {
-  max-width: 800px;
-  padding: 30px;
-  margin:auto;
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3em;
 }
 
-.sticky {
-  position: fixed;
+/* ----------------------- navigation ----------------------- */
+nav {
+  position: sticky;
   top: 0;
-  width: 100%;
+  background-color: rgb(35, 38, 39);
+}
+
+nav .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+}
+
+nav .container ul li {
+  display: inline-block;
+  border-radius: 5px;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 10px;
+  color: rgb(233, 233, 233);
+  border-radius: 10px;
+}
+
+nav .container ul li:hover {
+  background-color: #383838;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+nav .container ul li.active-link {
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+nav .container ul li.active-link a {
+  color: rgb(43, 48, 49);
 }
 
 .left {
   float: left;
-  color: pink;
-}
-
-.left:hover {
-  text-decoration: none;
 }
 
 .right {
   float: right;
-  color: rgb(51, 56, 56);
-  width: 52px;
-  border: 1px solid grey;
-  border-radius: 10px;
-  margin-left: 4px;
 }
 
-.right:hover {
-  text-decoration: none;
+/* ------------------------ sections ------------------------ */
+section {
+  max-width: 100%;
 }
 
-.main {
-  margin: auto;
-}
-
-.section {
-  padding: 30px;
-  margin: auto;
-}
-
-.section h1 {
-  margin-top: 160px;
-}
-
-.section-content {
+.section-contents {
+  min-height: 100vh;
   max-width: 800px;
   margin: auto;
+  padding: 140px 30px 30px 30px;
 }
 
-#section-one {
-  min-height: 100vh;
-  background-color: rgb(43, 48, 49);
-  color: rgb(231, 231, 231);
+#home {
+  background-color: rgb(35, 38, 39);
+  color: rgb(202, 202, 202);
+  padding-top: 100px;
+}
+#home h1{
+  font-size: 7em;
 }
 
-#section-two {
-  min-height: 100vh;
-  background-color: rgb(231, 231, 231);
+#works {
+  background-color: rgb(243, 243, 243);
   color: rgb(43, 48, 49);
 }
 
-#section-three {
-  min-height: 100vh;
-  background-color: rgb(43, 48, 49);
-  color: rgb(231, 231, 231);
+#about {
+  background-color: rgb(35, 38, 39);
+  color: rgb(202, 202, 202);
 }
 
-#section-four {
-  min-height: 100vh;
-  background-color: rgb(231, 231, 231);
+#contact {
+  background-color: rgb(243, 243, 243);
   color: rgb(43, 48, 49);
 }
 
+footer {
+  margin: auto;
+  height: 70px;
+  text-align: center;
+  font-size: .8em;
+  background-color: rgb(243, 243, 243);
+  color: rgb(43, 48, 49);
+}
+
+/* ---------------------- project cards --------------------- */
 .project-card {
   background-color: white;
   min-height: 100px;
-  margin: auto auto 6px auto;
+  margin: auto auto 10px auto;
   padding: 10px;
-  border: 1px solid rgb(180, 180, 180);
   border-radius: 20px;
   display: none; /* cards hidden on default*/
+  -webkit-box-shadow: 16px 16px 45px -19px rgba(0,0,0,0.2);
+  -moz-box-shadow: 16px 16px 45px -19px rgba(0,0,0,0.2);
+  box-shadow: 16px 16px 45px -19px rgba(0,0,0,0.2);
 }
 
 .project-card img {
   max-width: 100%;
   margin: auto;
   border-radius: 16px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .project-card p {
@@ -130,19 +154,98 @@ nav a:hover {
   font-weight: bold;
 }
 
+.extproj {
+  float: right;
+  width: 50px;
+  padding: 3px;
+  border-radius: 10px;
+  border: 0;
+  margin: 2px;
+  font-size: .7em;
+  margin-top: -2px;
+}
+
+.extproj a {
+  color: black;
+}
+
+#github-btn {
+  background-color: rgb(172, 205, 224);
+}
+
+#demo-btn {
+  background-color: rgb(176, 212, 176);
+}
+
+.extproj:hover {
+  opacity: .8;
+  transform: translateY(1px);
+}
+
 .show {
   display: block;
 }
 
-.round {
-  width: 24%;
+.project-filters {
+  width: 100%; 
+  display: flex; 
+  gap: 1%; 
+  align-items: stretch;
+}
+
+.project-filter-button {
   height: 30px;
   border-radius: 40px;
   border: 0;
   background-color: rgb(43, 48, 49);
   color: rgb(231, 231, 231);
+  width: 25%;
+  text-transform: uppercase;
+  font-size: .7em;
+  cursor: pointer;
 }
 
+.project-filter-button:hover {
+  background-color: rgb(85, 88, 88);
+}
+
+.project-filter-button.active {
+  color: rgb(43, 48, 49);
+}
+
+.project-filter-button.active:hover {
+  opacity: 0.9;
+}
+
+.project-filter-button.active#all {
+  background-color: rgb(207, 181, 94);
+}
+
+.project-filter-button.active#code {
+  background-color: rgb(122, 182, 169);
+}
+
+.project-filter-button.active#design {
+  background-color: rgb(152, 142, 209);
+}
+
+.project-filter-button.active#art {
+  background-color: rgb(180, 156, 124);
+}
+
+.fas.fa-code {
+  color: rgb(122, 182, 169);
+}
+
+.fa-solid.fa-palette {
+  color: rgb(180, 156, 124);
+}
+
+.fa-solid.fa-crop {
+  color: rgb(152, 142, 209);
+}
+
+/* ---------------------- contact form ---------------------- */
 #contact-form-top {
   display: flex;
   flex-direction: row;
@@ -194,21 +297,42 @@ input:hover, textarea:hover, #subject:hover {
 
 #submit {
   width: 100%;
+  background-color: rgb(43, 48, 49);
+  color: white;
+  cursor: pointer;
 }
 
 #submit:hover {
-  background-color: rgb(43, 48, 49);
+  background-color: rgb(66, 69, 70);
   color: white;
 }
 
-footer {
-  margin: auto;
-  height: 70px;
-  text-align: center;
-  font-size: .8em;
+.reveal {
+  opacity: 0;
 }
 
-/* responsive sizing */
+.reveal.reveal-active {
+  opacity: 1;
+}
+
+.reveal-active.fade-bottom {
+  animation: fade-bottom .5s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* -------------------- responsive sizing ------------
+------- */
 @media only screen and (max-width: 600px) {
   form {
     width:100%;

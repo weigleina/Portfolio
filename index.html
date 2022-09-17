@@ -1,219 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <!-- icons -->
     <script src="https://kit.fontawesome.com/d4df3ad427.js" crossorigin="anonymous"></script>
-    
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="">
-    
     <!-- google fonts -->
-
+    
     <!-- css -->
     <link href="./styles/styles.css" type="text/css" rel="stylesheet"/>
-    
   </head>
 
   <body>
-    <!-- header -->
-    <header>
-
-    </header>
-    
-    <nav id="nav">
-      <div class="nav-links">
-        <a href="#section-one" class="left">aw</a>
-        <a href="#section-two">Works</a>&nbsp;&nbsp;
-        <a href="#section-three">About</a>&nbsp;&nbsp;
-        <a href="#section-four">Contact</a>
-        <a href="#section-one" class="right">🌙</a>
+    <!-- navigation -->
+    <nav>
+      <div class="container">
+        <ul>
+          <li class="home left active-link"><a href="#home">aw</a></li>
+          <li class="works"><a href="#works">Works</a></li>
+          <li class="about"><a href="#about">About</a></li>
+          <li class="contact"><a href="#contact">Contact</a></li>
+          <li class="night right"><a href="#night">🌙</a></li>
+        </ul>
       </div>
     </nav>
-  
-    <!-- main content container -->
-    <div class="main">      
-      
-      <!-- hello -->      
-      <div class="section" id="section-one">
-        <div class="section-content">
-          <h1>Hello!</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, excepturi saepe. A, maiores! Quaerat harum est, suscipit nobis mollitia cumque totam, unde ad impedit sit alias accusamus? Doloremque, distinctio culpa.</p>
-        </div>
+
+    <!-- home -->
+    <section id="home">
+      <div class="section-contents">
+        <h1>Hello!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa, a amet velit eos at voluptatibus tempore enim minima et quisquam recusandae quam eligendi adipisci similique voluptate, obcaecati magni perspiciatis.</p>
+        <a href="mailto: allie@alliew.dev" target="_blank"><i class="fa-solid fa-at"></i></a>
+        <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
+        <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a><br>
       </div>
+    </section>
 
-      <!-- works -->      
-      <div class="section" id="section-two">
-        <div class="section-content">
-          <h1>Works</h1>
-          <!-- project filter buttons -->
-          <div style="text-align: center;">
-            <button class="round active" onclick="filterSelection('all')">all</button>
-            <button class="round code" onclick="filterSelection('code')">code</button>
-            <button class="round design" onclick="filterSelection('design')">design</button>
-            <button class="round art" onclick="filterSelection('art')">art</button>
-          </div>
-          <br>
-
-          <!-- code project: datesaver -->
-          <div class="project-card code">
-            <i class="fas fa-code"></i> Code One<button class="right">Github</button><button class="right">Live</button>
-            <p>Description</p>
-            <center><img src="images/datesaver.gif"/></center>
-          </div>
-
-          <!-- art project: datesaver -->
-          <div class="project-card art">
-            <i class="fa-solid fa-palette"></i> Art One<button class="right">Github</button><button class="right">Live</button>
-            <p>Description</p>
-            <center><img src="images/datesaver.gif"/></center>
-          </div>
-
-          <!-- code project: datesaver -->
-          <div class="project-card code">
-            <i class="fas fa-code"></i> Code Two<button class="right">Github</button><button class="right">Live</button>
-            <p>Description</p>
-            <center><img src="images/datesaver.gif"/></center>
-          </div>
-
-          <!-- design project: datesaver -->
-          <div class="project-card design">
-            <i class="fa-solid fa-crop"></i> Design One<button class="right">Github</button><button class="right">Live</button>
-            <p>Description</p>
-            <center><img src="images/datesaver.gif"/></center>
-          </div>
-
-        </div>
-      </div>
-      
-      <!-- about -->
-      <div class="section" id="section-three">
-        <div class="section-content">
-          <h1>About</h1>
-          <p>My passion for developing software has grown as a way for me to express my thought process 
-            and creativity, without limits as to what can be learned. I am excited to continue to develop 
-            my skills in new technologies and how to apply them in a constantly-changing industry.</p>
-          <p>With a background in art & digitial design to complement my studies in computer science, 
-            I enjoy every part of developing a project—from conceptualization and planning to execution, 
-            and closing the idea with an application that is pleasing to the eye and easy to use. 
-            Currently, I'm re-working some of my software projects to make my code more readable, 
-            clean, and optimized for quicker runtimes and less redundancy.</p>
-          <p><img src="./images/self.png" width="100%" style="border-radius:10px"><br><br>
-            In my free time I can be found spending time with my family, camping, or whipping up some new bandanas for my dog.</p>
+    <!-- works -->
+    <section id="works">
+      <div class="section-contents reveal fade-bottom">
+        <h1>Works</h1>
+        <!-- project filter buttons -->
         
-          <p>I'm always happy to meet new people! Send me an email, a <a href="#section-four">quick note</a>, or connect with me on linkedin.</p>
-          <br>
-          <h3>Education</h3>
-          B.S., Computer Science
-          <br><br>
-          <h3>Career Development</h3>
-          Project+
+        <div class="project-filters" id="project-filter-container">
+          <button class="project-filter-button active" id="all" onclick="filterSelection('all')">all</button>
+          <button class="project-filter-button" id="code" onclick="filterSelection('code')">code</button>
+          <button class="project-filter-button" id="design" onclick="filterSelection('design')">design</button>
+          <button class="project-filter-button" id="art" onclick="filterSelection('art')">art</button>
         </div>
-      </div>
-
-      <!-- contact -->
-      <div class="section" id="section-four">
-        <div class="section-content">
-          <h1>Contact</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, excepturi saepe. A, maiores! Quaerat harum est, suscipit nobis mollitia cumque totam, unde ad impedit sit alias accusamus? Doloremque, distinctio culpa.</p>
-          <!-- contact form-->
-          <form name="contact" method="POST" data-netlify="true" action="./pages/formreceived.html">
-            <div id="contact-form-top">
-              <input type="text" name="name" id="form-name" placeholder="Name" required/>
-              <input type="email" name="email" id="form-email" placeholder="Email" required />
-            </div>
-            <select name="subject" id="subject">
-              <option value="let's work together">Let's work together</option>
-              <option value="question">I have a question!</option>
-              <option value="something else">Something else</option>
-            </select>
-            <textarea rows="4" name="message" id="form-message" placeholder="Message" required></textarea>
-            <input type="submit" id="submit" value="Send"/>
-          </form>
+        <br>
+ 
+        <!-- code project: datesaver -->
+        <div class="project-card code">
+          <i class="fas fa-code"></i> DateSaver
+          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina" target="_blank">Github</a></button>
+          <button class="extproj" id="demo-btn">Live</button>
+          <p>Description</p>
+          <center><img src="images/datesaver.gif"/></center>
         </div>
-      </div>
 
-    </div>
+        <!-- art project: datesaver -->
+        <div class="project-card art">
+          <i class="fa-solid fa-palette"></i> Tangerines<button class="extproj" id="github-btn">Github</button><button class="extproj" id="demo-btn">Live</button>
+          <p>Description</p>
+          <center><img src="images/tangerines.png"/></center>
+        </div>
+
+        <!-- code project: datesaver -->
+        <div class="project-card code">
+          <i class="fas fa-code"></i> Flood-Recovery Bot<button class="extproj" id="github-btn">Github</button><button class="extproj" id="demo-btn">Live</button>
+          <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur esse tenetur natus est, ex cupiditate voluptates voluptatum necessitatibus aspernatur.</p>
+          <center><img src="images/flood-recovery-bot.gif"/></center>
+        </div>
+
+        <!-- code project: datesaver -->
+        <div class="project-card code">
+          <i class="fas fa-code"></i> Food2Go<button class="extproj" id="github-btn">Github</button><button class="extproj" id="demo-btn">Live</button>
+          <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur esse tenetur natus est, ex cupiditate voluptates voluptatum necessitatibus aspernatur.</p>
+          <center><img src="images/food2go.gif"/></center>
+        </div>
+
+        <!-- design project: datesaver -->
+        <div class="project-card design">
+          <i class="fa-solid fa-crop"></i> Design One<button class="extproj" id="github-btn">Github</button><button class="extproj" id="demo-btn">Live</button>
+          <p>Description</p>
+          <center><img src="images/dxs-branding.png"/></center>
+        </div>
+        
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      <div class="section-contents reveal fade-bottom">
+        <h1>About</h1>
+        <p>My passion for developing software has grown as a way for me to express my thought process 
+          and creativity, without limits as to what can be learned. I am excited to continue to develop 
+          my skills in new technologies and how to apply them in a constantly-changing industry.</p>
+        <p>With a background in art & digitial design to complement my studies in computer science, 
+          I enjoy every part of developing a project—from conceptualization and planning to execution, 
+          and closing the idea with an application that is pleasing to the eye and easy to use. 
+          Currently, I'm re-working some of my software projects to make my code more readable, 
+          clean, and optimized for quicker runtimes and less redundancy.</p>
+        <p><br><img src="./images/self.png" width="100%" style="border-radius:10px"><br><br>
+          In my free time I can be found spending time with my family, camping, or whipping 
+          up some new bandanas for my dog.</p>
+      
+        <p>I'm always happy to meet new people! Send me an <a href="mailto:allie@alliew.dev">email</a>, a 
+          <a href="#contact">quick note</a>, or connect with me on linkedin.</p>
+        <br>
+        <h3>Education</h3>
+        B.S., Computer Science
+        <br><br>
+        <h3>Career Development</h3>
+        Project+
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="section-contents reveal fade-bottom"">
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, excepturi saepe. A, maiores! Quaerat harum est, suscipit nobis mollitia cumque totam, unde ad impedit sit alias accusamus? Doloremque, distinctio culpa.</p>
+        <!-- contact form-->
+        <form name="contact" method="POST" data-netlify="true" action="./pages/formreceived.html">
+          <div id="contact-form-top">
+            <input type="text" name="name" id="form-name" placeholder="Name" required/>
+            <input type="email" name="email" id="form-email" placeholder="Email" required />
+          </div>
+          <select name="subject" id="subject">
+            <option value="let's work together">Let's work together</option>
+            <option value="question">I have a question!</option>
+            <option value="something else">Something else</option>
+          </select>
+          <textarea rows="4" name="message" id="form-message" placeholder="Message" required></textarea>
+          <input type="submit" id="submit" value="Send"/>
+        </form>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer>
       <a href="mailto: allie@alliew.dev" target="_blank"><i class="fa-solid fa-at"></i></a>
-        <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
-        <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a><br>
-        Alyssa Weiglein, CS Engineer © 2022
+      <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
+      <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a><br>
+      Alyssa Weiglein, CS Engineer © 2022
     </footer>
 
     <!-- javascript -->
-    <script>
-      // sticky navbar
-      window.onscroll = function() {
-        stickyNav()
-      }
-
-      var navbar = document.getElementById("nav");
-      var sticky = navbar.offsetTop;
-      function stickyNav() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-
-      // show all projects by default
-      filterSelection("all")
-
-      // filter projects by type
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("project-card");
-        if (c == "all") c = "";
-        for (i = 0; i < x.length; i++) {
-          removeClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-        }
-      }
-
-      // show filtered projects
-      function addClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-          }
-        }
-      }
-
-      // hide projects that are not selected
-      function removeClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-        }
-        element.className = arr1.join(" ");
-      }
-
-      // add 'active' class to the current control button to highlight it
-      var btnContainer = document.getElementById("project-type-button-container");
-      var btns = btnContainer.getElementsByClassName("project-type");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script>
+    <script src="./script/script.js" type="text/javascript"></script>
   </body>
 </html>

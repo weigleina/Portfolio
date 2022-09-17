@@ -1,22 +1,29 @@
-// sticky navbar
-window.onscroll = function() {
-  stickyNav()
-}
+// highlight active links
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
 
-var navbar = document.getElementById("nav");
-var sticky = navbar.offsetTop;
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 160) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active-link");
+    if (li.classList.contains(current)) {
+      li.classList.add("active-link");
+    }
+  });
+};
 
 // show all projects by default
 filterSelection("all")
 
-// filter projects by type
+// show all projects
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("project-card");
@@ -27,7 +34,6 @@ function filterSelection(c) {
   }
 }
 
-// show filtered projects
 function addClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -39,22 +45,21 @@ function addClass(element, name) {
   }
 }
 
-// hide projects that are not selected
 function removeClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
     }
   }
   element.className = arr1.join(" ");
 }
 
 // add 'active' class to the current control button to highlight it
-var btnContainer = document.getElementById("project-type-button-container");
-var btns = btnContainer.getElementsByClassName("project-type");
+var btnContainer = document.getElementById("project-filter-container");
+var btns = btnContainer.getElementsByClassName("project-filter-button");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
@@ -62,3 +67,21 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("reveal-active");
+    } else {
+      reveals[i].classList.remove("reveal-active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
