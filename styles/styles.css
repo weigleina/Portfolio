@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+
 p{
   margin-bottom:1em;
 }
@@ -26,6 +27,11 @@ p{
 h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 3em;
+}
+
+hr {
+  margin: 20px auto 16px auto;
+  opacity: .2;
 }
 
 /* ----------------------- navigation ----------------------- */
@@ -88,13 +94,13 @@ section {
   min-height: 100vh;
   max-width: 800px;
   margin: auto;
-  padding: 140px 30px 30px 30px;
+  padding: 140px 30px 60px 30px;
 }
 
 #home {
   background-color: rgb(35, 38, 39);
   color: rgb(202, 202, 202);
-  padding-top: 100px;
+  padding-top: 60px;
 }
 #home h1{
   font-size: 7em;
@@ -180,6 +186,7 @@ footer {
 .extproj:hover {
   opacity: .8;
   transform: translateY(1px);
+  cursor: pointer;
 }
 
 .show {
