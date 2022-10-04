@@ -57,11 +57,12 @@ h2 {
 
 h3 {
   font-family: 'Satisfy';
-  font-size: 1.75em;
+  font-size: 1.25em;
+  text-align: center;
 }
 
 hr {
-  margin: 20px auto 16px auto;
+  margin: 20px auto 10px auto;
   opacity: .5;
 }
 
@@ -149,7 +150,11 @@ footer {
   margin: 100px auto 14px auto;
   text-transform: uppercase;
   letter-spacing: .2em;
-  font-size: 1.5em;
+  font-size: 3em;
+}
+
+#home h3 {
+  font-size: 3em;
 }
 
 /* -------------------------- works ------------------------- */
@@ -167,7 +172,7 @@ footer {
   border: 2px solid rgb(190, 190, 190);
   color: rgb(148, 148, 148);
   width: 25%;
-  text-transform: uppercase;
+
   font-family: 'Noto Sans', sans-serif;
   font-weight: bold;
   font-size: .8em;
@@ -397,4 +402,13 @@ input:hover, textarea:hover, #subject:hover {
   .skill-badge {
     height: 60px;
   }
+
+  #title {
+    font-size: 1.753em;
+  }
+
+  #home h3 {
+    font-size: 1.75em;
+  }
+
 }
