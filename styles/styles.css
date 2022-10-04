@@ -1,5 +1,5 @@
 /* ---------------------- google fonts ---------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Satisfy&family=Walter+Turncoat&family=Zilla+Slab&family=Share+Tech&family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Satisfy&family=Zilla+Slab&family=Nunito:wght@800&display=swap');
 
 /* ------------------------- global ------------------------- */
 * {
@@ -57,7 +57,7 @@ h2 {
 
 h3 {
   font-family: 'Satisfy';
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 hr {
@@ -149,7 +149,7 @@ footer {
   margin: 100px auto 14px auto;
   text-transform: uppercase;
   letter-spacing: .2em;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 /* -------------------------- works ------------------------- */
@@ -381,6 +381,7 @@ input:hover, textarea:hover, #subject:hover {
   form {
     width:100%;
   }
+
   #contact-form-top {
     display: flex;
     flex-direction: column;
@@ -388,7 +389,12 @@ input:hover, textarea:hover, #subject:hover {
     gap: 6px;
     margin-bottom: 6px;
   }
+
   input {
     width:100%;
+  }
+
+  .skill-badge {
+    height: 60px;
   }
 }
