@@ -154,7 +154,10 @@ footer {
 }
 
 #home h3 {
-  font-size: 3em;
+  font-size: 2.5em;
+  background: -webkit-linear-gradient(rgb(218, 218, 218), rgb(49, 49, 49));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* -------------------------- works ------------------------- */
