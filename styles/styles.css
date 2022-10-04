@@ -172,7 +172,6 @@ footer {
   border: 2px solid rgb(190, 190, 190);
   color: rgb(148, 148, 148);
   width: 25%;
-
   font-family: 'Noto Sans', sans-serif;
   font-weight: bold;
   font-size: .8em;
@@ -301,7 +300,7 @@ footer {
 .skill-stack {
   margin: auto;
   text-align: center;
-  margin-bottom: 14px;
+  line-height: 2.2;
 }
 
 .skill-stack span {
