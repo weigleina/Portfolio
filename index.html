@@ -9,34 +9,25 @@
     <script src="https://kit.fontawesome.com/d4df3ad427.js" crossorigin="anonymous"></script>
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="">
-    <!-- google fonts -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     
     <!-- css -->
     <link href="./styles/styles.css" type="text/css" rel="stylesheet"/>
   </head>
 
   <body>
-    <!-- navigation -->
-    <nav>
-      <div class="container">
-        <ul>
-          <li class="home left active-link"><a href="#home">arw</a></li>
-          <li class="works"><a href="#works">Works</a></li>
-          <li class="about"><a href="#about">About</a></li>
-          <li class="contact"><a href="#contact">Contact</a></li>
-          <li class="night right"><a href="#night">🌙</a></li>
-        </ul>
-      </div>
-    </nav>
-
     <!-- home -->
     <section id="home">
       <div class="section-contents">
-        <h1>Hello!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa, a amet velit eos at voluptatibus tempore enim minima et quisquam recusandae quam eligendi adipisci similique voluptate, obcaecati magni perspiciatis.</p>
-        <a href="mailto: contact@arw.works" target="_blank"><i class="fa-solid fa-at"></i></a>
-        <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
-        <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a><br>
+        <center>
+          <h1 id="title">Alyssa Weiglein</h1>
+          <h3>software developer</h3><br><br>
+            <a href="#works"><i class="fa-regular fa-folder-open"></i></a>
+            <a href="#skills"><i class="fa-solid fa-code"></i></a>
+            <a href="#about"><i class="fa-regular fa-face-smile"></i></a>
+            <a href="#contact"><i class="fa-regular fa-message"></i></a><br>
+        </center>
       </div>
     </section>
 
@@ -57,66 +48,113 @@
         <!-- code project: datesaver -->
         <div class="project-card code">
           <i class="fas fa-code"></i> DateSaver
-          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/DateSaver" target="_blank">Github</a></button>
+          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/DateSaver" target="_blank">/src</a></button>
           <button class="extproj" id="demo-btn">Live</button>
           <p>A fully-functioning desktop program used to manipulate a relational database of appointment and customer data.</p>
-          <center><img src="images/datesaver.gif"/></center>
+          <center><img src="images/datesaver.gif"/></center><br>
+          <div class="skill-stack">
+            <span>Java</span>
+            <span>MySQL</span>
+            <span>APIs</span>
+            <span>Maven</span>
+            <span>JavaFX</span>
+          </div>
         </div>
 
         <!-- code project: quickroute -->
         <div class="project-card code">
           <i class="fas fa-code"></i> QuickRoute
-          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/QuickRoute" target="_blank">Github</a></button>
+          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/QuickRoute" target="_blank">/src</a></button>
           <button class="extproj" id="demo-btn">Live</button>
           <p>A command-line interface application that utilizes a greedy algorithm to find the most efficient route for a delivery queue.</p>
-          <center><img src="images/quickroute.gif"/></center>
+          <center><img src="images/quickroute.gif"/></center><br>
+          <div class="skill-stack">
+            <span>Python</span>
+          </div>
         </div>
 
         <!-- art project: tangerines -->
         <div class="project-card art">
           <i class="fa-solid fa-palette"></i> Tangerines
-          <button class="extproj" id="github-btn">Github</button>
           <button class="extproj" id="demo-btn">Live</button>
           <p>Digital painting of (unfinished) tangerines.</p>
-          <center><img src="images/tangerines.png"/></center>
+          <center><img src="images/tangerines.png"/></center><br>
+          <div class="skill-stack">
+            <span>Corel Painter</span>
+          </div>
         </div>
 
         <!-- code project: flood-recovery bot -->
         <div class="project-card code">
           <i class="fas fa-code"></i> Flood-Recovery Bot
-          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/Flood-Recovery-Bot" target="_blank">Github</a></button>
+          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/Flood-Recovery-Bot" target="_blank">/src</a></button>
           <button class="extproj" id="demo-btn">Live</button>
           <p>A virtual prototype of an autonomous robotic recovery system that demonstrates goal-seeking behaviors in navigating through a predefined area.</p>
-          <center><img src="images/flood-recovery-bot.gif"/></center>
+          <center><img src="images/flood-recovery-bot.gif"/></center><br>
+          <div class="skill-stack">
+            <span>LUA</span>
+            <span>CoppeliaSim</span>
+          </div>
         </div>
 
         <!-- code project: food2go -->
         <div class="project-card code">
           <i class="fas fa-code"></i> Food2Go
-          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/Food2Go" target="_blank"></a>Github</a></button>
+          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/Food2Go" target="_blank"></a>/src</a></button>
           <button class="extproj" id="demo-btn">Live</button>
           <p>A command-line application that allows a user to order a meal.</p>
-          <center><img src="images/food2go.gif"/></center>
+          <center><img src="images/food2go.gif"/></center><br>
+          <div class="skill-stack">
+            <span>Java</span>
+          </div>
         </div>
 
         <!-- code project: career-quiz chat bot -->
         <div class="project-card code">
           <i class="fas fa-code"></i> Career-Quiz Chat Bot
-          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/chat-bot" target="_blank">Github</a></button>
+          <button class="extproj" id="github-btn"><a href="http://www.github.com/weigleina/chat-bot" target="_blank">/src</a></button>
           <button class="extproj" id="demo-btn">Live</button>
           <p>A human-response simulated chat bot that follows a decision-making algorithm to recommend the best career choice to website visitors.</p>
-          <center><img src="images/chatbot.gif" style="width: 60%"/></center>
+          <center><img src="images/chatbot.gif" style="width: 60%"/></center><br>
+          <div class="skill-stack">
+            <span>AI/ML</span>
+          </div>
         </div>
 
         <!-- design project: dxs -->
         <div class="project-card design">
           <i class="fa-solid fa-crop"></i> DXS
-          <button class="extproj" id="github-btn">Github</button>
           <button class="extproj" id="demo-btn"><a href="http://decalxpressstudio.etsy.com" target="_blank">Live</a></button>
           <p>Product desgign and branding.</p>
-          <center><img src="images/dxs-branding.png"/></center>
-        </div>
-        
+          <center><img src="images/dxs-branding.png"/></center><br>
+          <div class="skill-stack">
+            <span>Adobe Photoshop</span>
+          </div>
+        </div>     
+    </section>
+
+    <!-- skills -->
+    <section id="skills">
+      <div class="section-contents reveal fade-bottom">
+        <h1>Skills</h1>
+        <div style="text-align:center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"class="skill-badge"  />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"class="skill-badge"  />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="skill-badge"  />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"class="skill-badge"  />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" class="skill-badge" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" class="skill-badge" />
+        </div>          
+      </div>
     </section>
 
     <!-- about -->
@@ -153,8 +191,11 @@
     <!-- contact -->
     <section id="contact">
       <div class="section-contents reveal fade-bottom"">
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, excepturi saepe. A, maiores! Quaerat harum est, suscipit nobis mollitia cumque totam, unde ad impedit sit alias accusamus? Doloremque, distinctio culpa.</p>
+        <h1>Contact</h1><br><center>
+        <a href="mailto: contact@arw.works" target="_blank"><i class="fa-solid fa-at"></i></a>
+        <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
+        <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+          </center>
         <!-- contact form-->
         <form name="contact" method="POST" data-netlify="true" action="./pages/formreceived.html">
           <div id="contact-form-top">
@@ -174,9 +215,6 @@
 
     <!-- footer -->
     <footer>
-      <a href="mailto: contact@arw.works" target="_blank"><i class="fa-solid fa-at"></i></a>
-      <a href="http://github.com/weigleina" target="_blank"><i class="fa-brands fa-github social"></i></a>
-      <a href="https://www.linkedin.com/in/alliew-dev/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a><br>
       Alyssa Weiglein, CS Engineer © 2022
     </footer>
 
